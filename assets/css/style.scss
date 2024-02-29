@@ -25,14 +25,50 @@ body {
 }
 
 .card-container {
-  width: 384px;
-  height: 522px;
+  width: 360px;
+  height: 498px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  gap: 24px;
   background-color: $neutral-white;
   border-radius: 20px;
   box-shadow: 10px 10px $neutral-black;
   border: solid 2px $neutral-black;
   padding: 24px;
+
+  .img-article {
+    border-radius: 20px;
+  }
+
+  .blog-cart-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .card-category {
+      @include flexCenter();
+      background-color: $primary-color;
+      border-radius: 4px;
+      width: 82px;
+      height: 29px;
+      padding: 4px 12px;
+      font-size: 18px;
+      font-weight: 800;
+      line-height: 150%;
+      text-align: center;
+    }
+    .card-publishing-date {
+    }
+    .card-title {
+    }
+    p {
+    }
+  }
+  .info-author {
+    .img-author {
+    }
+    .author {
+    }
+  }
 }
