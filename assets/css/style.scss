@@ -21,4 +21,18 @@ body {
   font-family: Figtree, sans-serif;
   @include flexCenter();
   height: 100vh;
+  background-color: $primary-color;
+}
+
+.card-container {
+  width: 384px;
+  height: 522px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  background-color: $neutral-white;
+  border-radius: 20px;
+  box-shadow: 10px 10px $neutral-black;
+  border: solid 2px $neutral-black;
+  padding: 24px;
 }

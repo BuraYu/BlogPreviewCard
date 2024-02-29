@@ -18,5 +18,27 @@ body {
       -ms-flex-align: center;
           align-items: center;
   height: 100vh;
+  background-color: #f4d04e;
+}
+
+.card-container {
+  width: 384px;
+  height: 522px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+  border-radius: 20px;
+  -webkit-box-shadow: 10px 10px #121212;
+          box-shadow: 10px 10px #121212;
+  border: solid 2px #121212;
+  padding: 24px;
 }
 /*# sourceMappingURL=style.css.map */
