@@ -15,8 +15,8 @@ body {
 }
 
 .card-container {
-  width: 360px;
-  height: 498px;
+  width: 384px;
+  height: 522px;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -81,4 +81,14 @@ body {
   padding: 12px;
   font-weight: 700;
   font-size: 14px;
+}
+
+@media only screen and (max-width: 375px) {
+  .card-container {
+    width: 327px;
+    height: 501px;
+  }
+  .card-container .img-article {
+    border-radius: 20px;
+  }
 }/*# sourceMappingURL=style.css.map */
