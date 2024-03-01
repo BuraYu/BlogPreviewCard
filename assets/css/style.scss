@@ -3,13 +3,15 @@ $neutral-white: hsl(0, 0%, 100%);
 $neutral-grey: hsl(0, 0%, 50%);
 $neutral-black: hsl(0, 0%, 7%);
 
+$layout-breakpoint-mobile: 375px;
+
 @mixin flexCenter {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:wght@200;300;400;500;600;700&family=Rubik:wght@400;500;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Poppins:wght@200;300;400;500;600;700&family=Rubik:wght@400;500;700&display=swap');
 
 * {
   margin: 0;
@@ -44,7 +46,8 @@ body {
   .blog-cart-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-between;
+    height: 100%;
 
     .card-category {
       @include flexCenter();
@@ -59,16 +62,36 @@ body {
       text-align: center;
     }
     .card-publishing-date {
+      font-size: 14px;
+      font-weight: 400;
     }
     .card-title {
+      font-size: 24px;
+      font-weight: 800;
+      transition: color 0.4s ease-in-out;
+      &:hover {
+        color: $primary-color;
+        cursor: pointer;
+      }
     }
     p {
+      font-size: 16px;
+      font-weight: 400;
+      color: $neutral-grey;
     }
   }
   .info-author {
+    display: flex;
+    justify-content: start;
+    align-items: center;
     .img-author {
+      width: 32px;
+      height: 32px;
     }
     .author {
+      padding: 12px;
+      font-weight: 700;
+      font-size: 14px;
     }
   }
 }
